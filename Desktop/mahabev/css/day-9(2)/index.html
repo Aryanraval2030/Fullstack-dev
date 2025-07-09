@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            text-transform: capitalize;
+            color: rgb(16, 16, 80);
+        }
+
+        /* container-1 */
+
+        .container-1 {
+            height: 400px;
+            width: 100%;
+            border: 2px solid black;
+            background-color: rgb(111, 110, 110);
+            margin-bottom: 10px;
+        }
+
+        .cont-1-child-1 {
+            height: auto;
+            width: 100%;
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .cont-1-child-2 {
+            background-color: yellow;
+            margin-left: 10px;
+            height: 160px;
+            width: 98%;
+            display: flex;
+        }
+
+        .box {
+            height: 70px;
+            width: 70px;
+            background-color: rgb(0, 213, 213);
+        }
+
+        /* container-2 */
+
+         .container-2 {
+            height: 400px;
+            width: 100%;
+            border: 2px solid black;
+            background-color: rgb(111, 110, 110);
+            margin-bottom: 10px;
+        }
+
+        .cont-2-child-1 {
+            height: auto;
+            width: 100%;
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .cont-2-child-2 {
+            background-color: yellow;
+            margin-left: 10px;
+            height: 280px;
+            width: 98%;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .box {
+            height: 70px;
+            width: 70px;
+            background-color: rgb(0, 213, 213);
+            border: 2px solid black;
+        }
+
+        /* container-3 */
+
+         .container-3 {
+            height: 400px;
+            width: 100%;
+            border: 2px solid black;
+            background-color: rgb(111, 110, 110);
+            margin-bottom: 10px;
+        }
+
+        .cont-3-child-1 {
+            height: auto;
+            width: 100%;
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .cont-3-child-2 {
+            background-color: yellow;
+            margin-left: 10px;
+            height: 280px;
+            width: 98%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .box {
+            height: 70px;
+            width: 70px;
+            background-color: rgb(0, 213, 213);
+        }
+
+        /* container-4 */
+
+        .container-4 {
+            height: 400px;
+            width: 100%;
+            border: 2px solid black;
+            background-color: rgb(111, 110, 110);
+            margin-bottom: 10px;
+        }
+
+        .cont-4-child-1 {
+            height: auto;
+            width: 100%;
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .cont-4-child-2 {
+            background-color: yellow;
+            margin-left: 10px;
+            height: 280px;
+            width: 98%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .box {
+            height: 70px;
+            width: 70px;
+            background-color: rgb(0, 213, 213);
+        }
+
+        /* container-5 */
+
+        .container-5 {
+            height: 400px;
+            width: 100%;
+            border: 2px solid black;
+            background-color: rgb(111, 110, 110);
+            margin-bottom: 10px;
+        }
+
+        .cont-5-child-1 {
+            height: auto;
+            width: 100%;
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .cont-5-child-2 {
+            background-color: yellow;
+            margin-left: 10px;
+            height: 280px;
+            width: 98%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .box {
+            height: 70px;
+            width: 70px;
+            background-color: rgb(0, 213, 213);
+        }
+
+        /* container-6 */
+
+        .container-6 {
+            height: 400px;
+            width: 100%;
+            border: 2px solid black;
+            background-color: rgb(111, 110, 110);
+            margin-bottom: 10px;
+        }
+
+        .cont-6-child-1 {
+            height: auto;
+            width: 100%;
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .cont-6-child-2 {
+            background-color: yellow;
+            margin-left: 10px;
+            height: 280px;
+            width: 98%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .box {
+            height: 70px;
+            width: 70px;
+            background-color: rgb(0, 213, 213);
+        }
+
+        /* container-7 */
+
+        .container-7 {
+            height: 400px;
+            width: 100%;
+            border: 2px solid black;
+            background-color: rgb(111, 110, 110);
+            margin-bottom: 10px;
+        }
+
+        .cont-7-child-1 {
+            height: auto;
+            width: 100%;
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .cont-7-child-2 {
+            background-color: yellow;
+            margin-left: 10px;
+            height: 180px;
+            width: 98%;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .box {
+            height: 70px;
+            width: 70px;
+            background-color: rgb(0, 213, 213);
+        }
+        /* container-8 */
+
+        .container-8 {
+            height: 400px;
+            width: 100%;
+            border: 2px solid black;
+            background-color: rgb(111, 110, 110);
+            margin-bottom: 10px;
+        }
+
+        .cont-8-child-1 {
+            height: auto;
+            width: 100%;
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .cont-8-child-2 {
+            background-color: yellow;
+            margin-left: 10px;
+            height: 180px;
+            width: 98%;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .box {
+            height: 70px;
+            width: 70px;
+            background-color: rgb(0, 213, 213);
+        }
+
+        /* container-9 */
+
+        .container-9 {
+            height: 400px;
+            width: 100%;
+            border: 2px solid black;
+            background-color: rgb(111, 110, 110);
+            margin-bottom: 10px;
+        }
+
+        .cont-9-child-1 {
+            height: auto;
+            width: 100%;
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .cont-9-child-2 {
+            background-color: yellow;
+            margin-left: 10px;
+            height: 280px;
+            width: 98%;
+            display: flex;
+            align-items: center;
+        }
+
+        .box {
+            height: 70px;
+            width: 70px;
+            background-color: rgb(0, 213, 213);
+        }
+
+        /* container-10 */
+
+        .container-10 {
+            height: 400px;
+            width: 100%;
+            border: 2px solid black;
+            background-color: rgb(111, 110, 110);
+            margin-bottom: 10px;
+        }
+
+        .cont-10-child-1 {
+            height: auto;
+            width: 100%;
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .cont-10-child-2 {
+            background-color: yellow;
+            margin-left: 10px;
+            height: 280px;
+            width: 98%;
+            display: flex;
+            align-items: stretch;
+        }
+
+        .box {
+            height: 70px;
+            width: 70px;
+            background-color: rgb(0, 213, 213);
+        }
+        /* container-11 */
+
+        .container-11 {
+            height: 400px;
+            width: 100%;
+            border: 2px solid black;
+            background-color: rgb(111, 110, 110);
+            margin-bottom: 10px;
+        }
+
+        .cont-11-child-1 {
+            height: auto;
+            width: 100%;
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .cont-11-child-2 {
+            background-color: yellow;
+            margin-left: 10px;
+            height: 260px;
+            width: 98%;
+            display: flex;
+            align-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            height: 70px;
+            width: 70px;
+            background-color: rgb(0, 213, 213);
+        }
+
+        /* container-12 */
+
+        .container-12 {
+            height: 400px;
+            width: 100%;
+            border: 2px solid black;
+            background-color: rgb(111, 110, 110);
+            margin-bottom: 10px;
+        }
+
+        .cont-12-child-1 {
+            height: auto;
+            width: 100%;
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .cont-12-child-2 {
+            background-color: yellow;
+            margin-left: 10px;
+            height: 280px;
+            width: 98%;
+            display: flex;
+            align-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            height: 70px;
+            width: 70px;
+            background-color: rgb(0, 213, 213);
+        }
+
+        /* container-13 */
+        .container-13 {
+            height: 400px;
+            width: 100%;
+            border: 2px solid black;
+            background-color: rgb(111, 110, 110);
+            margin-bottom: 10px;
+        }
+
+        .cont-13-child-1 {
+            height: auto;
+            width: 100%;
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .cont-13-child-2 {
+            background-color: yellow;
+            margin-left: 10px;
+            height: 280px;
+            width: 98%;
+            display: flex;
+            align-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            height: 70px;
+            width: 70px;
+            background-color: rgb(0, 213, 213);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-1">
+        <div class="cont-1-child-1">
+            <h1>display: flex(parent property) justify-contant</h1>
+            <ul>
+                <li>the justify-contant property always the flexbox container items when
+                    the items do not use all avalible space on the main-exis.
+                </li>
+                <li>the justify-contant property can also be used in a grid container text-transform
+                    align grid items in the inline decoration.
+                </li>
+            </ul>
+            <h1>display: flex(parent property) justify-contant :flex-start;</h1>
+            <ul>
+                <li>"flex-start" in the container of css flexbox refers to be value that
+                    the alignment of items within a flex container along the main-exis.
+                </li>
+            </ul>
+        </div>
+
+        <div class="cont-1-child-2">
+            <div class="box1 box">1</div>
+            <div class="box2 box">2</div>
+            <div class="box3 box">3</div>
+            <div class="box4 box">4</div>
+        </div>
+    </div>
+
+    <!-- container-2 -->
+    <div class="container-2">
+        <div class="cont-2-child-1">
+            <h1>display: flex(parent property) justify-contant: flex-end;</h1>
+            <ul>
+                <li>the justify-contant flex-end property always the flexbox container items when
+                    the items do not use all avalible space on the main-exis.
+                </li>
+            </ul>
+        </div>
+
+        <div class="cont-2-child-2">
+            <div class="box1 box">1</div>
+            <div class="box2 box">2</div>
+            <div class="box3 box">3</div>
+            <div class="box4 box">4</div>
+        </div>
+    </div>
+
+       <!-- container-3 -->
+        <div class="container-3">
+        <div class="cont-3-child-1">
+            <h1>display: flex(parent property) justify-contant: center;</h1>
+            <ul>
+                <li>the justify-contant center property always the flexbox container items when
+                    the items do not use all avalible space on the main-exis.
+                </li>
+            </ul>
+        </div>
+
+        <div class="cont-3-child-2">
+            <div class="box1 box">1</div>
+            <div class="box2 box">2</div>
+            <div class="box3 box">3</div>
+            <div class="box4 box">4</div>
+        </div>
+    </div>
+
+    <!-- contaner-4 -->
+
+    <div class="container-4">
+        <div class="cont-4-child-1">
+            <h1>display: flex(parent property) justify-contant: space-between;</h1>
+            <ul>
+                <li>the justify-contant space-between property always the flexbox container items when
+                    the items do not use all avalible space on the main-exis.
+                </li>
+            </ul>
+        </div>
+
+        <div class="cont-4-child-2">
+            <div class="box1 box">1</div>
+            <div class="box2 box">2</div>
+            <div class="box3 box">3</div>
+            <div class="box4 box">4</div>
+        </div>
+    </div>
+
+    <!-- container-5 -->
+
+     <div class="container-5">
+        <div class="cont-5-child-1">
+            <h1>display: flex(parent property) justify-contant: space-around;</h1>
+            <ul>
+                <li>the justify-contant space-around property always the flexbox container items when
+                    the items do not use all avalible space on the main-exis.
+                </li>
+            </ul>
+        </div>
+
+        <div class="cont-5-child-2">
+            <div class="box1 box">1</div>
+            <div class="box2 box">2</div>
+            <div class="box3 box">3</div>
+            <div class="box4 box">4</div>
+        </div>
+    </div>
+
+    <!-- container-6 -->
+
+     <div class="container-6">
+        <div class="cont-6-child-1">
+            <h1>display: flex(parent property) justify-contant: space-evenly;</h1>
+            <ul>
+                <li>the justify-contant space-evenly property always the flexbox container items when
+                    the items do not use all avalible space on the main-exis.
+                </li>
+            </ul>
+        </div>
+
+        <div class="cont-6-child-2">
+            <div class="box1 box">1</div>
+            <div class="box2 box">2</div>
+            <div class="box3 box">3</div>
+            <div class="box4 box">4</div>
+        </div>
+    </div>
+
+    <!-- container-7 -->
+
+     <div class="container-7">
+        <div class="cont-7-child-1">
+            <h1>display: flex(parent property) align-items</h1>
+            <ul>
+                <li>the align-items property always the flexbox container items when
+                    the items do not use all avalible space on the main-exis.
+                </li>
+            </ul>
+
+            <h1>display: flex(parent property) align: flex-start;</h1>
+            <ul>
+                <li>the align: flex-start; property always the flexbox container items when
+                    the items do not use all avalible space on the main-exis.
+                </li>
+            </ul>
+        </div>
+
+        <div class="cont-7-child-2">
+            <div class="box1 box">1</div>
+            <div class="box2 box">2</div>
+            <div class="box3 box">3</div>
+            <div class="box4 box">4</div>
+        </div>
+    </div>
+    <!-- container-8 -->
+
+    <div class="container-8">
+        <div class="cont-8-child-1">
+            <h1>display: flex(parent property) align: flex-end;</h1>
+            <ul>
+                <li>the align: flex-end; property always the flexbox container items when
+                    the items do not use all avalible space on the main-exis.
+                </li>
+            </ul>
+        </div>
+
+        <div class="cont-8-child-2">
+            <div class="box1 box">1</div>
+            <div class="box2 box">2</div>
+            <div class="box3 box">3</div>
+            <div class="box4 box">4</div>
+        </div>
+    </div>
+
+    <!-- container-9 -->
+
+    <div class="container-9">
+        <div class="cont-9-child-1">
+            <h1>display: flex(parent property) align-content: center;</h1>
+            <ul>
+                <li>the  align-content: center; property always the flexbox container items when
+                    the items do not use all avalible space on the main-exis.
+                </li>
+            </ul>
+        </div>
+
+        <div class="cont-9-child-2">
+            <div class="box1 box">1</div>
+            <div class="box2 box">2</div>
+            <div class="box3 box">3</div>
+            <div class="box4 box">4</div>
+        </div>
+    </div>
+
+    <!-- container-10 -->
+      <div class="container-10">
+        <div class="cont-10-child-1">
+            <h1>display: flex(parent property) align-content: stretch;</h1>
+            <ul>
+                <li>the  align-content: stretch; property always the flexbox container items when
+                    the items do not use all avalible space on the main-exis.
+                </li>
+            </ul>
+        </div>
+
+        <div class="cont-10-child-2">
+            <div class="box1 box">1</div>
+            <div class="box2 box">2</div>
+            <div class="box3 box">3</div>
+            <div class="box4 box">4</div>
+        </div>
+    </div>
+    <!--  container-11-->
+
+    <div class="container-11">
+        <div class="cont-11-child-1">
+            <h1>display: flex(parent property) align-content: space-between;</h1>
+            <ul>
+                <li>the  align-content: space-between; property always the flexbox container items when
+                    the items do not use all avalible space on the main-exis.
+                </li>
+            </ul>
+        </div>
+
+        <div class="cont-11-child-2">
+            <div class="box1 box">1</div>
+            <div class="box2 box">2</div>
+            <div class="box3 box">3</div>
+            <div class="box4 box">4</div>
+            <div class="box1 box">1</div>
+            <div class="box2 box">2</div>
+            <div class="box3 box">3</div>
+            <div class="box4 box">4</div>
+            <div class="box1 box">1</div>
+            <div class="box2 box">2</div>
+            <div class="box3 box">3</div>
+            <div class="box4 box">4</div>
+            <div class="box1 box">1</div>
+            <div class="box2 box">2</div>
+            <div class="box3 box">3</div>
+            <div class="box4 box">4</div>
+            <div class="box1 box">1</div>
+            <div class="box2 box">2</div>
+            <div class="box3 box">3</div>
+            <div class="box4 box">4</div>
+            <div class="box1 box">1</div>
+            <div class="box2 box">2</div>
+            <div class="box3 box">3</div>
+            <div class="box4 box">4</div>
+        </div>
+    </div>
+
+    <!-- container-12 -->
+
+     <div class="container-12">
+        <div class="cont-12-child-1">
+            <h1>display: flex(parent property) align-content: space-around;</h1>
+            <ul>
+                <li>the  align-content: space-around; property always the flexbox container items when
+                    the items do not use all avalible space on the main-exis.
+                </li>
+            </ul>
+        </div>
+
+        <div class="cont-12-child-2">
+            <div class="box1 box">1</div>
+            <div class="box2 box">2</div>
+            <div class="box3 box">3</div>
+            <div class="box4 box">4</div>
+            <div class="box1 box">1</div>
+            <div class="box2 box">2</div>
+            <div class="box3 box">3</div>
+            <div class="box4 box">4</div>
+            <div class="box1 box">1</div>
+            <div class="box2 box">2</div>
+            <div class="box3 box">3</div>
+            <div class="box4 box">4</div>
+            <div class="box1 box">1</div>
+            <div class="box2 box">2</div>
+            <div class="box3 box">3</div>
+            <div class="box4 box">4</div>
+            <div class="box1 box">1</div>
+            <div class="box2 box">2</div>
+            <div class="box3 box">3</div>
+            <div class="box4 box">4</div>
+            <div class="box1 box">1</div>
+            <div class="box2 box">2</div>
+            <div class="box3 box">3</div>
+            <div class="box4 box">4</div>
+        </div>
+    </div>
+
+    <!-- container-13 -->
+
+     <div class="container-13">
+        <div class="cont-13-child-1">
+            <h1>display: flex(parent property) align-content: space-evenly;</h1>
+            <ul>
+                <li>the  align-content: space-evenly; property always the flexbox container items when
+                    the items do not use all avalible space on the main-exis.
+                </li>
+            </ul>
+        </div>
+
+        <div class="cont-13-child-2">
+            <div class="box1 box">1</div>
+            <div class="box2 box">2</div>
+            <div class="box3 box">3</div>
+            <div class="box4 box">4</div>
+            <div class="box1 box">1</div>
+            <div class="box2 box">2</div>
+            <div class="box3 box">3</div>
+            <div class="box4 box">4</div>
+            <div class="box1 box">1</div>
+            <div class="box2 box">2</div>
+            <div class="box3 box">3</div>
+            <div class="box4 box">4</div>
+            <div class="box1 box">1</div>
+            <div class="box2 box">2</div>
+            <div class="box3 box">3</div>
+            <div class="box4 box">4</div>
+            <div class="box1 box">1</div>
+            <div class="box2 box">2</div>
+            <div class="box3 box">3</div>
+            <div class="box4 box">4</div>
+            <div class="box1 box">1</div>
+            <div class="box2 box">2</div>
+            <div class="box3 box">3</div>
+            <div class="box4 box">4</div>
+        </div>
+    </div>
+</body>
+
+</html>

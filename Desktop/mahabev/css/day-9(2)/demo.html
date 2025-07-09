@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unit Comparison</title>
+  <style>
+    html {
+      font-size: 16px; /* 1rem = 16px */
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+      margin-bottom: 20px;
+      background-color: lightblue;
+    }
+
+    .px-box {
+      font-size: 20px; /* Fixed */
+    }
+
+    .percent-box {
+      width: 50%; /* Half of body width */
+    }
+
+    .rem-box {
+      font-size: 2rem; /* 2 x root font = 32px */
+    }
+
+    .em-parent {
+      font-size: 16px;
+    }
+
+    .em-child {
+      font-size: 1.5em; /* 1.5 x parent = 24px */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box px-box">Font-size: 20px</div>
+
+  <div class="box percent-box">Width: 50%</div>
+
+  <div class="box rem-box">Font-size: 2rem (32px)</div>
+
+  <div class="box em-parent">
+    Parent font-size: 16px
+    <div class="em-child">Child font-size: 1.5em (24px)</div>
+  </div>
+
+</body>
+</html>
