@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Background Image, size, repeat, position, attachment
+
+- Types Of Gradient : Linear, Radial, Conic
+
+-Two class Property , Parent-child Property
+
+- Ex : Create Parallax Scrolling Effect -->
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        .mainbox{
+            height: 50%;
+            width: 100%;
+            border: 5px solid black;
+        }
+
+        .img{
+            height:300px;
+            width:100%;
+            background-image: url(https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?cs=srgb&dl=pexels-souvenirpixels-417074.jpg&fm=jpg);
+            background-attachment: fixed;
+        }
+
+        .parallax{
+            text-align: center;
+            background-color: rgba(2, 2, 2, 0.293);
+            height: 50px;
+            width: 100%;
+            padding-top: 20px;
+            font-size: 25px;
+            
+        }
+
+        .Linear{
+            font-size: 25px;
+            height: 300px;
+            width: 100%;
+            border: 2px solid black;
+            background: linear-gradient(90deg,rgba(53, 155, 42, 1) 0%, rgba(87, 109, 199, 1) 60%, rgba(144, 151, 162, 1) 73%, rgba(237, 83, 188, 1) 94%);
+        }
+
+        .Radial{
+           font-size: 25px;
+            height: 300px;
+            width: 100%;
+            border: 2px solid black;
+            background: radial-gradient(circle,rgba(53, 155, 42, 1) 30%, rgba(87, 109, 199, 1) 67%, rgba(144, 151, 162, 1) 82%, rgba(237, 83, 188, 1) 18%);
+        }
+
+        .conic{
+            font-size: 25px;
+            height: 300px;
+            width: 100%;
+            background: Conic-gradient(red, blue, white, green);
+        }
+
+        .part{
+            padding-top: 15px;
+            height: 50px;
+            width: 100%;
+             padding-left: 10px;
+            border: 2px solid yellow ;
+        }
+        .bottom{
+            height:100px;
+            width: 100%;
+            border: 2px solid black;
+            text-align: center;
+            padding-top: 20px;
+
+        }
+        .inner{
+            margin-top:10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainbox">
+        <div class="img">
+            <p class="parallax">Wellcome to the Parallax World</p>
+        </div>
+
+        <div class="Linear">
+            Linear Gradient Section
+        </div>
+        <div class="Radial">
+            Radial Gradient Section
+        </div>
+        <div class="conic">
+            Conic Gradient Section
+        </div>
+
+        <div class="part">
+            This box user two classes <b>text-block</b>and <b>highlight</b>
+        </div>
+
+        <div class="bottom">
+        <h3>Parent box Heading</h3>
+        <div class="inner">
+            This Paragraph is a Child element styled inside the parent
+        </div>
+        </div>
+    </div>
+</body>
+</html>

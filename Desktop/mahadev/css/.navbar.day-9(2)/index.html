@@ -12,21 +12,30 @@
         * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         body {
             color: #f0f8ff;
-            margin: 5px;
+            font-family: "Amazon Ember", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
         }
 
         .navbar {
-            height: 80px;
+            position: fixed;
+            top: 0%;
+            height: 60px;
             width: 100%;
             background-color: black;
+            border: 2px solid black;
             box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: space-evenly;
+        }
+
+        .navbaar:{
+
         }
 
         .menu {
@@ -36,10 +45,26 @@
             gap: 10px;
             list-style: none;
         }
+        .menu-3{
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            list-style: none;
+        }
+        .nav-1-div-3{
+            padding: 10px;
+        }
+        .nav-1-div-3:hover{
+           color: black;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            box-shadow: 0 0 4px 2px rgba(103, 99, 143, 0.906);;
+        }
 
         .logo {
             margin-left: 10px;
-            font-size: 30px;
+            font-size: 25px;
             font-weight: bold;
             color: rgb(227, 223, 196);
         }
@@ -59,13 +84,20 @@
             box-shadow: 0 0 4px 2px rgba(103, 99, 143, 0.906);
         }
 
+        .search-icon {
+            background-image: url('searchicon.png');
+
+        }
+
         #dropdown {
             border: none;
             background-color: black;
             color: white;
         }
 
-        button {
+        
+
+        .btn-1 {
             font-size: 15px;
             background-color: rgb(44, 44, 236);
             padding: 10px 24px;
@@ -77,11 +109,343 @@
             border-radius: 5px;
         }
 
-        button:hover {
+        .btn-1:hover {
             /* background-color: rgb(120, 120, 230); */
             color: #ffffff;
-            box-shadow: rgba(255, 255, 255, 0.35) 1px 1px 10px;
-            
+            box-shadow: rgba(255, 255, 255, 0.35) -1px 5px 5px;
+
+        }
+
+        /* section-1 */
+        /* section-1 */
+        /* section-1 */
+        /* section-1 */
+        .sec-1-prtn {
+            margin-top: 60px;
+            height: 700px;
+            width: 100%;
+            display: flex;
+        }
+
+        .sec-1 {
+            height: 100%;
+            width: 50%;
+            background-color: #000000;
+            background: linear-gradient(90deg, rgb(0, 0, 0) 99%, rgb(0, 0, 0));
+            /* padding: 10px; */
+            padding-left: 25px;
+        }
+
+        .sec-1-inner {
+            height: 50%;
+            width: 90%;
+            margin-top: 20px;
+        }
+
+        h1 {
+            font-size: 40px;
+            padding-bottom: 20px;
+            padding-top: 45px;
+        }
+
+
+        .sec-1-pera {
+            font-size: 20px;
+            padding-bottom: 20px;
+        }
+
+        .btn-2 {
+            height: 55px;
+            color: black;
+            padding: 10px 24px;
+            border-radius: 4px;
+            font-size: 15px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(255, 255, 255);
+            transition-duration: 0.2s;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        .sec-2-heading {
+            height: 100px;
+            width: 250px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 2px solid rgb(177, 244, 144);
+        }
+
+        .btn-2:hover {
+            transform: scale(1.1);
+            color: #5a5959;
+        }
+
+        .div-2 {
+            height: 100%;
+            width: 50%;
+            background: linear-gradient(270deg, rgb(0, 17, 255) 70%, black);
+        }
+
+        .prime-day {
+            /* height: 50px;
+            width: 200px;
+            border: 2px solid black; */
+            display: flex;
+            justify-content: center;
+        }
+        .sec-2-heading {
+            margin-top: 20px;
+            color: white;
+            background-color: black;
+            height: 30px;
+            width: 250px;
+            font-size: 20px;
+            border-radius: 5px;
+
+        }
+
+        .div-box {
+            height: 90%;
+            width: 100%;
+        }
+
+        .box-0 {
+            width: 100%;
+            height: 164px;
+            display: flex;
+            justify-content: center;
+            gap: 4px;
+        }
+
+        .box1 {
+            height: 150px;
+            width: 200px;
+            border-radius: 10px;
+            margin: 4px;
+        }
+
+        .box2 {
+            height: 150px;
+            width: 200px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.48) 6px 2px 16px 0px, rgba(0, 0, 0, 0.8) -6px -2px 16px 0px;
+            margin: 4px;
+        }
+
+        .sec-1-img-1 {
+            background-size: cover;
+            border-radius: 10px;
+            border: 5px solid rgb(161, 168, 239);
+            object-fit: cover;
+            overflow: hidden;
+        }
+
+        .box3 {
+            height: 150px;
+            width: 200px;
+            border-radius: 10px;
+            margin: 4px;
+        }
+
+        .sec-box-2 {
+            width: 100%;
+            height: 164px;
+            display: flex;
+            justify-content: center;
+            gap: 4px;
+
+        }
+
+        .box4 {
+            height: 150px;
+            width: 200px;
+            border-radius: 10px;
+            margin: 4px;
+        }
+
+        .box5 {
+            height: 150px;
+            width: 200px;
+            border-radius: 10px;
+            margin: 4px;
+        }
+
+        .box6 {
+            height: 150px;
+            width: 200px;
+            border-radius: 10px;
+            margin: 4px;
+        }
+
+        /* section-----2////////2------2-//////////2-------2------2------2-------2 */
+
+        .sec-2 {
+            height: 600px;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            padding-left: 25px;
+            background-image: url(./img.sec-2.jpg);
+        }
+
+        .sec-2-child-1 {
+            height: 100%;
+            width: 50%;
+            /* background: linear-gradient(130deg, #000000 80%, #00080f 100%, #00080f 90%); */
+
+        }
+
+        .sec-2-inner {
+            height: 90%;
+            width: 100%;
+        }
+
+        .sec-2-child-2 {
+            height: 100%;
+            width: 50%;
+        }
+
+        .sec-2-child-inner-1 {
+            font-size: 33px;
+            margin-bottom: 10px;
+        }
+
+        .sec-2-pera-1 {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .btn-3 {
+            height: 50px;
+            color: black;
+            padding: 10px 24px;
+            border-radius: 4px;
+            font-size: 15px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(255, 255, 255);
+            transition-duration: 0.2s;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .btn-3:hover {
+            transform: scale(1.1);
+            color: #5a5959;
+        }
+
+        .sec-2-img-1 {
+            height: 70%;
+        }
+
+        /* ////////////section-3//////////section-3////////////section-3/////// */
+
+        .sec-3 {
+            height: 700px;
+            width: 100%;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 50px;
+            background-color: #00080f;
+            background: linear-gradient(8deg, #000015 90%, #000015 90%, #000015 100%);
+            display: flex;
+        }
+
+        .sec-3-child-1 {
+            height: 100%;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .sec-3-pera-1 {
+            padding-top: 10px;
+            font-size: 20px;
+        }
+
+        .sec-3-child-2 {
+            height: 100%;
+            width: 50%;
+        }
+
+        .sec-3-c-1-inner-1 {
+            height: 40%;
+            width: 95%;
+        }
+
+        .sec-3-head3 {
+            font-size: 35px;
+            margin-bottom: 25px;
+        }
+
+        .sec-3-c-1-box {
+            height: 400px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+        }
+
+        .sec-3-c-1-box>div {
+            color: var(--__dChsbGMXsw4B, #2162a1);
+            height: 100%;
+            width: 100%;
+        }
+
+        .sec-3-b {
+            background-color: #2162a1;
+            border-radius: 10px;
+            transition-duration: 1s;
+        }
+
+        .sec-3-imgs {
+            border-radius: 10px;
+
+        }
+
+        .sec-3-imgs:hover {
+            box-shadow: -1px 1px 10px white;
+        }
+
+        /* footer///////////footer */
+
+        .footer {
+            height: 150px;
+            width: 100%;
+            background-color: #2f2f2f;
+        }
+
+        .footer-img {
+            height: 50px;
+            width: 130px;
+            margin-left: 45%;
+            padding-top: 10px;
+        }
+
+        #links-footer {
+            height: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .ftr-link {
+            text-decoration: none;
+            color: rgb(50, 174, 183);
+        }
+        .ftr-pera{
+            height: 20px;
+            width: 100%;
+            color: rgb(102, 149, 152);
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
         }
     </style>
 </head>
@@ -98,21 +462,180 @@
                 <li>|</li>
                 <li><a href="#" class="menu-2"><i class="fa-solid fa-outdent"></i>Subsribtions</a></li>
             </ul>
-            <ul class="menu">
-                <li><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></li>
+            <ul class="menu-3">
+                <li class="search-icon"><i class="fa-solid fa-magnifying-glass nav-1-div-3"></i></li>
                 <select id="dropdown">
                     <option>EN</option>
                     <option>HINDI</option>
                     <option>GUJARATI</option>
                     <option>MARATHI</option>
                 </select>
-                <li><i class="fas fa-ellipsis-v"></i><i class="fas fa-ellipsis-v"></i><i class="fas fa-ellipsis-v"></i>
+                <li class="nav-1-div-3"><i class="fas fa-ellipsis-v "></i><i class="fas fa-ellipsis-v"></i><i class="fas fa-ellipsis-v"></i>
                 </li>
-                <li><i class="fa-regular fa-user" style="color: #ffffff;"></i></li>
-                <button>join Prime</button>
+                <li><i class="fa-regular fa-user nav-1-div-3"></i></li>
+                <button class="btn-1">join Prime</button>
             </ul>
         </nav>
     </header>
-</body>
+    <!-- section-1 -->
+    <section class="sec-1-prtn">
+        <div class="sec-1">
+            <div class="sec-1-inner">
+                <h1>Welcome to Prime Video</h1>
+                <p class="sec-1-pera">Join Prime to watch the latest movies, TV shows and award-winning Amazon Originals
+                </p>
+                <button class="btn-2">sign in to join prime</button>
+            </div>
+        </div>
 
+        <div class="div-2">
+            <div class="prime-day">
+                <h3 class="sec-2-heading">
+                    PRIME DAY RELEASES
+                </h3>
+            </div>
+            <div class="div-box">
+                <div class="box-0">
+                    <div class="box1">
+                        <img class="sec-1-img-1" src="./img.one.jfif" height="100%" width="100%">
+                    </div>
+                    <div class="box2"><img class="sec-1-img-1" src="./img.two.jpg" alt="" height="100%" width="100%">
+                    </div>
+                    <div class="box3"><img class="sec-1-img-1" src="./img.three.jpg" alt="" height="100%" width="100%">
+                    </div>
+                </div>
+                <div class="sec-box-2">
+                    <div class="box4"><img class="sec-1-img-1" src="./img.for.webp" alt="" height="100%" width="100%">
+                    </div>
+                    <div class="box5"><img class="sec-1-img-1" src="./img.five.jfif" alt="" height="100%" width="100%">
+                    </div>
+                    <div class="box6"><img class="sec-1-img-1" src="./img.six.webp" alt="" height="100%" width="100%">
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+
+    <!-- section-2 ///////* section-2 *//////* section-2 *//////* section-2 */ -->
+
+    <section>
+        <div class="sec-2">
+            <div class="sec-2-child-1">
+                <div class="sec-2-inner">
+                    <h1 class="sec-2-child-inner-1">Movie rentals on Prime Video</h1>
+                    <p class="sec-2-pera-1">
+                        Early Access to new movies, before digital subscription
+                    </p>
+                    <button class="btn-3">Rent now</button>
+                </div>
+            </div>
+            <!-- child-2 -->
+            <div class="sec-2-child-2">
+            </div>
+        </div>
+    </section>
+
+    <!-- //////////////////////////setion-3///////////////////////////////// -->
+    <section>
+        <div class="sec-3">
+            <div class="sec-3-child-1">
+                <div class="sec-3-c-1-inner-1">
+                    <h3 class="sec-3-head3">
+                        Your favorite subscriptions all in one place
+                    </h3>
+                    <p class="sec-3-pera-1">
+                        Customers can subscribe to get access to a variety of
+                        premium and specialty content, easily accessible within
+                        the Prime Video app
+                    </p>
+                </div>
+            </div>
+
+            <!-- /////child-2/////child-2//// -->
+
+            <div class="sec-3-child-2">
+                <div class="sec-3-c-1-box">
+                    <div class="sec-3-b">
+                        <a href="">
+                            <img class="sec-3-imgs"
+                            src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/426x294_AppleTV_V1._AC_SX400_QL80_FP_.png"
+                            height="100%" width="100%">
+                        </a>
+                    </div>
+                    <div class="sec-3-b">
+                       <a href="">
+                         <img class="sec-3-imgs"
+                            src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/426x294_Crunchyroll_V1._AC_SX400_QL80_FP_.png"
+                            height="100%" width="100%">
+                       </a>
+                    </div>
+                    <div class="sec-3-b">
+                     <a href="">
+                           <img class="sec-3-imgs"
+                            src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/426x294_LGP_V1._AC_SX400_QL80_FP_.png"
+                            height="100%" width="100%">
+                     </a>
+                    </div>
+                    <div class="sec-3-b">
+                        <a href="">
+                            <img class="sec-3-imgs"
+                            src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/426x294_Discovery_V1._AC_SX400_QL80_FP_.png"
+                            height="100%" width="100%">
+                        </a>
+                    </div>
+                    <div class="sec-3-b">
+                        <a href="">
+                            <img class="sec-3-imgs"
+                            src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/426x294_Anime_V1._AC_SX400_QL80_FP_.png"
+                            height="100%" width="100%">
+                        </a>
+                    </div>
+                    <div class="sec-3-b">
+                       <a href="">
+                         <img class="sec-3-imgs"
+                            src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/426x294_Manoramamax_V1._AC_SX400_QL80_FP_.png"
+                            height="100%" width="100%">
+                       </a>
+                    </div>
+                    <div class="sec-3-b">
+                       <a href="">
+                         <img class="sec-3-imgs"
+                            src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/426x294_Chaupal_V1._AC_SX400_QL80_FP_.png"
+                            height="100%" width="100%">
+                       </a>
+                    </div>
+                    <div class="sec-3-b">
+                        <a href="">
+                            <img class="sec-3-imgs"
+                            src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/426x294_BBC_V1._AC_SX400_QL80_FP_.png"
+                            height="100%" width="100%">
+                        </a>
+                    </div>
+                    <div class="sec-3-b">
+                        <a href="">
+                            <img class="sec-3-imgs"
+                            src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/Channels/MLP/426x294_Fancode_V1._AC_SX400_QL80_FP_.png"
+                            height="100%" width="100%">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer//////footer///////// -->
+    <footer class="footer">
+        <div class="footer-img">
+            <img src="https://m.media-amazon.com/images/G/01/digital/video/acquisition/logo/pv_logo_white._CB548637580_.png"
+                height="100%" width="100%">
+        </div>
+        <div id="links-footer">
+            <a class="ftr-link" href="#">Terms and Privacy Notice</a>
+            <a class="ftr-link" href="#">Send us feedback</a>
+            <a class="ftr-link" href="#">Help</a>
+        </div>
+        <p class="ftr-pera"> © 1996-2025, Amazon.com, Inc. or its affiliates</p>
+    </footer>
+</body>
 </html>

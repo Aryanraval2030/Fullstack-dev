@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+
+    *{
+        margin: 0%;
+        padding: 0%;
+        }
+
+    .rating{
+        color: gold;
+     }
+
+    body{
+        height: 1170px;
+        width: 90%;
+        border: 4px solid black;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        }
+
+    .header{
+        background-color: #52236a; 
+        margin: auto;
+        width: 98%;
+        height: 200px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; 
+       
+    }
+        /* section 2 */
+
+
+    .write1{
+        padding-top: 40px;
+    }
+
+    .header-img{
+        float: right;
+        margin-top: 20px;
+        object-fit: cover;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    .one{
+        font-size: 20px;
+        color: #ffc400; 
+        font-family: 'Georgia', serif; 
+        letter-spacing: 3px;
+        padding-top: 10px;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        
+    }
+
+    .inner{
+        margin: 10px;
+        margin-top: 0;
+        font-weight: bold;
+    }
+    .input{
+        height: 45px;
+        margin-top: 20px;
+    }
+
+    .section{
+        float: right;
+        margin-right: 10px;
+    }
+
+    .products{
+        display: inline;
+        padding-left: 10px;
+    }
+
+    #section{
+        height: 27%;
+        width: 100%;
+    }
+
+    /* box1 section 3 */
+    #sectino-3{
+        height: 300px;
+        width: 100%;
+        position: relative;
+    }
+
+    .box{
+        position: absolute;
+        margin: 5px;
+    }
+
+
+    /* sectino 3 box-1 */
+
+
+     .box1{
+        height: 95%;
+        width: 23%;
+        border: 2px solid black;
+        border-radius: 10px;
+        left: 1px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+
+    .box1-pro{
+        background-color: red;
+        color: white;
+        margin: 2px;
+        width: 30px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    
+    .box1-pro2{
+        background-color: blue;
+        color: white;
+        margin: 2px;
+        width: 30px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .imgone{
+        height: 100px;
+        width: 100px;
+        margin: auto;
+    }
+
+    .inside{
+        height: 90px;
+        width: 95%;
+        margin-top: 18%;
+        border: 5px solid rgb(255, 255, 255);
+        border-radius: 10px;
+
+    }
+
+    button{
+        float: right;
+        text-align: center;
+        background-color: blue;
+        color: white;
+        border: none;
+        height: 30px;
+        width: 50px;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px; 
+   }
+    /* section 3 box2 */
+
+    .box2{
+        height: 95%;
+        width: 23%;
+        border: 2px solid black;
+        border-radius: 10px;
+        left: 25%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .imgtwo{
+        height: 130px;
+        width: 130px;
+        margin: auto;
+        margin-top: 20%;
+    }
+
+    .insidetwo{
+        height: 90px;
+        width: 95%;
+        border: 5px solid rgb(255, 255, 255);
+        margin: auto;
+        margin-top: 5%;
+        border-radius: 10px;
+        line-height: 18px;
+    }
+
+    /* section 3 box3 */
+
+    .box3{
+        height: 95%;
+        width: 23%;
+        border: 2px solid black;
+        border-radius: 10px;
+        left: 50%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .box3-pro{
+        height: auto;
+        width: 90%;
+        margin: 10px;
+        text-align: center;
+        background-color: red;
+        color: white;
+    }
+
+    .img3{
+        height: 120px;
+        width: 120px;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .insidethree{
+        height: 90px;
+        width: 95%;
+        border: 5px solid rgb(255, 255, 255);
+        margin-top: 9px;
+        border-radius: 10px;
+    }
+
+    /* section 3 box4 */
+
+
+     .box4{
+        height: 95%;
+        width: 23%;
+        border: 2px solid black;
+        border-radius: 10px;
+        left: 75%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+
+
+    .box4-pro{
+        background-color: red;
+        color: white;
+        margin: 2px;
+        width: 30px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    
+    .box4-pro2{
+        background-color: blue;
+        color: white;
+        margin: 2px;
+        width: 30px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .imgfor{
+        height: 120px;
+        width: 120px;
+        margin: auto;
+    }
+
+    .inside4{
+        height: 90px;
+        width: 95%;
+        margin-top: 10%;
+        border: 5px solid rgb(255, 255, 255);
+        border-radius: 10px;
+
+    }
+
+    button{
+        float: right;
+        text-align: center;
+        background-color: blue;
+        color: white;
+        border: 2px solid black;
+        height: 30px;
+        width: 50px;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px; 
+   }
+
+
+    /* section 4 box6 */
+
+
+    .sectino-4{
+        height: 300px;
+        width: 100%;
+        position: relative;
+    }
+
+
+   /* section 4 box1 */
+
+
+
+     .box5{
+        height: 95%;
+        width: 23%;
+        border: 2px solid black;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    
+    .box5-pro2{
+        background-color: blue;
+        color: white;
+        margin: 2px;
+        width: 30px;
+        border-radius: 5px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .imgfive{
+        height: 120px;
+        width: 120px;
+        margin: auto;
+    }
+
+    .inside5{
+        height: 90px;
+        width: 95%;
+        margin-top: 10%;
+        border: 5px solid rgb(255, 255, 255);
+        border-radius: 10px;
+
+    }
+
+    button{
+        float: right;
+        text-align: center;
+        background-color: blue;
+        color: white;
+        border: 2px solid black;
+        height: 30px;
+        width: 50px;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px; 
+   }
+
+    /* section 4 box6 */
+
+    .box6{
+        height: 95%;
+        width: 23%;
+        border: 2px solid black;
+        border-radius: 10px;
+        left: 25%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .box6-pro{
+        background-color: rgb(255, 0, 0);
+        color: white;
+        margin: 2px;
+        width: auto;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .img6{
+        height: 120px;
+        width: 120px;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .insidesix{
+        height: 90px;
+        width: 95%;
+        border: 5px solid rgb(255, 255, 255);
+        margin-top: 9px;
+        border-radius: 10px;
+    }
+
+
+    /* seciton4 box 7 */
+
+    .box7{
+        height: 95%;
+        width: 23%;
+        border: 2px solid black;
+        border-radius: 10px;
+        left: 50%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+
+    .box7-pro{
+        background-color: red;
+        color: white;
+        margin: 2px;
+        width: 30px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    
+    .box7-pro2{
+        background-color: blue;
+        color: white;
+        margin: 2px;
+        width: 30px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .imgsaven{
+        height: 100px;
+        width: 100px;
+        margin: auto;
+    }
+
+    .insidesaven{
+        height: 90px;
+        width: 95%;
+        margin-top: 18%;
+        border: 5px solid rgb(255, 255, 255);
+        border-radius: 10px;
+
+    }
+
+    button{
+        float: right;
+        text-align: center;
+        background-color: blue;
+        color: white;
+        border: none;
+        height: 30px;
+        width: 50px;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px; 
+   }
+
+   /* section 4 box8 */
+
+     .box8{
+        height: 95%;
+        width: 23%;
+        border: 2px solid black;
+        border-radius: 10px;
+        left: 75%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    
+    .box8-pro2{
+        background-color: blue;
+        color: white;
+        margin: 2px;
+        width: 30px;
+        border-radius: 5px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .imgeight{
+        height: 120px;
+        width: 120px;
+        margin: auto;
+    }
+
+    .inside8{
+        height: 90px;
+        width: 95%;
+        margin-top: 10%;
+        border: 5px solid rgb(255, 255, 255);
+        border-radius: 10px;
+
+    }
+
+    button{
+        float: right;
+        text-align: center;
+        background-color: blue;
+        color: white;
+        border: 2px solid black;
+        height: 30px;
+        width: 50px;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px; 
+   }
+
+   /* last section */
+
+      #sectino-5{
+        height: 300px;
+        width: 100%;
+        position: relative;
+    }
+
+     .box9{
+        height: 95%;
+        width: 23%;
+        border: 2px solid black;
+        border-radius: 10px;
+        left: 1px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+
+    .box9-pro{
+        background-color: red;
+        color: white;
+        margin: 2px;
+        width: 30px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    
+    .box9-pro2{
+        background-color: blue;
+        color: white;
+        margin: 2px;
+        width: 30px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .img9{
+        height: 100px;
+        width: 100px;
+        margin: auto;
+    }
+
+    .inside9{
+        height: 90px;
+        width: 95%;
+        margin-top: 18%;
+        border: 5px solid rgb(255, 255, 255);
+        border-radius: 10px;
+
+    }
+
+    button{
+        float: right;
+        text-align: center;
+        background-color: blue;
+        color: white;
+        border: none;
+        height: 30px;
+        width: 50px;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px; 
+   }
+
+
+   /* last box2 */
+
+      .box10{
+        height: 95%;
+        width: 23%;
+        border: 2px solid black;
+        border-radius: 10px;
+        left: 25%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .img10{
+        height: 130px;
+        width: 130px;
+        margin: auto;
+        margin-top: 20%;
+    }
+
+    .inside10{
+        height: 90px;
+        width: 95%;
+        border: 5px solid rgb(255, 255, 255);
+        margin: auto;
+        margin-top: 5%;
+        border-radius: 10px;
+        line-height: 18px;
+    }
+
+  
+    </style>
+</head>
+<body>
+    <header>
+    <div class="header">
+
+        <!-- write parg -->
+    <div class="inner">
+            <p>
+            <img class="header-img" src="https://w7.pngwing.com/pngs/879/955/png-transparent-delishop-supermarket-food-online-grocer-logo-super-market-miscellaneous-company-leaf-thumbnail.png" alt="" width="150px" height="150px">
+            <p class="write1 one">E-Grocery Super Market</p>
+            <p class="write2 one">Whatever the occasion, we've got you coverd.</p>
+            <p class="write3 one">
+            <input type="search" placeholder="search E-Grocery........" id=""></p>
+            </p>
+    </div>
+    </div>
+    </header>
+
+
+    <!-- section 2 one -->
+    <section>
+        <div class="input">
+            <p class="products">26 products tournd </p>
+
+            <select class="section">
+                <option value="">Short bt Ftures</option>
+            </select>
+
+           <select class="section">
+                <option value="">30</option>
+                <option value="">29</option>
+                <option value="">28</option>
+            </select>
+        </div>
+     </section> 
+
+
+     <!-- box-1 section3 -->
+
+     <section id="sectino-3">
+        <div class="box1 box">
+            <p class="box1-pro"> sale </p>
+            <p class="box1-pro2"> 10% </p>
+            <p class="imgone"><img src="https://tiimg.tistatic.com/fp/1/007/797/tasty-spicy-delicious-balaji-wafers-aloo-sav-namkeen-packaging-size-400-gram-557.jpg" height="100%" width="100%"></p>
+            <div class="inside">
+                 <p>Balaji Sev</p>
+                  <p class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <p>4.2(4)</p>
+                 </p>
+                <p>$21.5 <s>$24</s><button>+add</button></p>
+            </div>
+        </div>
+
+        <div class="box2 box">
+            <p class="imgtwo"><img src="https://eu.dookan.com/cdn/shop/products/19MQgv8S9FSpPk9TDJgob2W-JZIJxL7Nu_6e2a1ba2-9d9e-4104-9549-a41373824ec3.png?v=1646642771" height="100%" width="100%"></p>
+            <div class="insidetwo">
+                <p>Manaco Biscute</p>
+                 <p class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <p>4.5(4)</p>
+                 </p>
+                 <p>$30 <s>$35</s><button>+add</button></p>
+            </div> 
+        </div>
+
+
+        <div class="box3 box">
+             <p class="box3-pro">Buy One Get $4.00 Off</p>
+             <p class="img3"><img src="https://www.bbassets.com/media/uploads/p/xl/40019376_19-cadbury-5-star-chocolate-home-pack.jpg" height="100%" width="100%"></p>
+             <div class="insidethree">
+                <p>5star Chocolate</p>
+                <p class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <p>4.0(4)</p>
+                </p>
+                <p>$45 <s>$60</s><button>+add</button></p>
+            </div>
+        </div>
+        <div class="box4 box">
+            <p class="box4-pro"> sale </p>
+            <p class="box4-pro2"> 10% </p>
+            <p class="imgfor"><img src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2024/7/29/8486e6d1-dc9a-417f-8594-22467da98193_chipsnachosandpopcorn_7CCPCUGWIH_MN.png" height="100%" width="100%"></p>
+            <div class="inside4">
+                 <p>Balaji Sev</p>
+                  <p class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <p>4.2(4)</p>
+                 </p>
+                <p>$21.5 <s>$24</s><button>+add</button></p>
+            </div>
+        </div>
+        </div>
+     </section>
+
+
+     <!-- section 4 -->
+
+
+
+     <section class="sectino-4">
+
+                <div class="box7 box">
+            <p class="box7-pro"> sale </p>
+            <p class="box7-pro2"> 10% </p>
+            <p class="imgsaven"><img src="https://tiimg.tistatic.com/fp/1/007/797/tasty-spicy-delicious-balaji-wafers-aloo-sav-namkeen-packaging-size-400-gram-557.jpg" height="100%" width="100%"></p>
+            <div class="insidesaven">
+                 <p>Balaji Sev</p>
+                  <p class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <p>4.2(4)</p>
+                 </p>
+                <p>$21.5 <s>$24</s><button>+add</button></p>
+            </div>
+        </div>
+
+
+         <div class="box6 box">
+            <p class="box6-pro">Buy One Get $4.00 Off</p>
+            <p class="img6"><img src="https://www.bbassets.com/media/uploads/p/xl/40019376_19-cadbury-5-star-chocolate-home-pack.jpg" height="100%" width="100%"></p>
+             <div class="insidesix">
+                <p>5star Chocolate</p>
+                <p class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <p>4.0(4)</p>
+                </p>
+                <p>$45 <s>$60</s><button>+add</button></p>
+            </div>
+        </div>
+
+         <div class="box8 box">
+            <p class="box8-pro2"> 35% </p>
+            <p class="imgeight"><img src="https://www.gopalnamkeen.com/storage/product/front_images/1736316278.jpg" height="100%" width="100%"></p>
+            <div class="inside8">
+                 <p>Katak matak</p>
+                  <p class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <p>4.2(4)</p>
+                 </p>
+                <p>$21 <s>$24</s><button>+add</button></p>
+            </div>
+        </div>
+
+        
+         <div class="box5 box">
+            <p class="box5-pro2"> 35% </p>
+            <p class="imgfive"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8L9Q6-IHnygOBt5C1W7pPSYyBpsfeGHRWow&s" height="100%" width="100%"></p>
+            <div class="inside5">
+                 <p>Tikha mitha mix</p>
+                  <p class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <p>4.2(4)</p>
+                 </p>
+                <p>$21.5 <s>$24</s><button>+add</button></p>
+            </div>
+        </div>
+     </section>
+
+     <section id="sectino-5">
+           <div class="box9 box">
+            <p class="box9-pro"> sale </p>
+            <p class="box9-pro2"> 10% </p>
+            <p class="img9"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcRvp_PZaLgOMDgq4JVyVWg7CGuRO8fFbIew&s" height="100%" width="100%"></p>
+            <div class="inside9">
+                 <p>Sakkarpara</p>
+                  <p class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <p>4.2(4)</p>
+                 </p>
+                <p>$21.5 <s>$24</s><button>+add</button></p>
+            </div>
+        </div>
+
+        <div class="box10 box">
+            <p class="img10"><img src="https://www.prinitifoods.com/new-images/gathiya.png" height="100%" width="100%"></p>
+            <div class="inside10">
+                <p>Gathiya</p>
+                 <p class="rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <p>4.5(4)</p>
+                 </p>
+                 <p>$5 <s>$10</s><button>+add</button></p>
+            </div> 
+        </div>
+     </section>
+</body>
+</html>
