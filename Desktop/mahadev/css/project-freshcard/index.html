@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh-card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic.min.css"
+        integrity="sha512-LeCmts7kEi09nKc+DwGJqDV+dNQi/W8/qb0oUSsBLzTYiBwxj0KBlAow2//jV7jwEHwSCPShRN2+IWwWcn1x7Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(248, 235, 217);
+            padding: 0 10px;
+        }
+
+        .header {
+            height: 150px;
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid rgb(206, 201, 201);
+
+        }
+
+        .header-1 {
+            height: 30px;
+            width: 99%;
+            display: flex;
+            justify-content: center;
+            color: rgb(0, 0, 0);
+            gap: 640px;
+            margin-left: 5px;
+            background-color: rgb(214, 236, 233);
+        }
+
+        .header-2 {
+            height: 70px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .header-loca{
+            text-align: center;
+        }
+
+        .logo {
+            height: 70px;
+            width: 150px;
+            font-weight: bold;
+            margin-right: 40px;
+            display: flex;
+            align-items: center;
+            font-size: 30px;
+        }
+
+        .input-loca-both {
+            margin-right: 160px;
+            display: flex;
+            gap: 10px;
+
+        }
+
+        .icon-header {
+            display: flex;
+            gap: 10px;
+        }
+
+        .search-header {
+            width: 400px;
+            height: 35px;
+            
+        }
+
+        .header-3-mipl-dropdown {
+            height: 40px;
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .header-3-btn {
+            height: 35px;
+            width: 150px;
+            background-color: green;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .header-3-mipl-dropdown>select {
+            height: 25px;
+        }
+
+        #pages-dropdown {
+            width: 70px;
+        }
+
+        /* section-1 */
+
+        .sec-1 {
+            margin-top: 10px;
+            height: 400px;
+            width: 100%;
+            background-image: url(./veg-2.jpg);
+            background-size: cover;
+            display: flex;
+        }
+
+        .sec-1-child-1-pera {
+            height: 350px;
+            padding-left: 20px;
+            width: 350px;
+        }
+
+        .sec-1-child-pera-2 {
+            border: 2px solid orange;
+            background-color: orange;
+            color: rgb(0, 0, 0);
+            border-radius: 10px;
+            width: 200px;
+            margin: 10px 0;
+        }
+
+        .sec-1-child-h1 {
+            font-size: 45px;
+            margin: 10px 0;
+        }
+
+        .sec-1-child-pera-3 {
+            margin: 10px 0;
+        }
+
+        .sec-1-child-btn {
+            height: 40px;
+            width: 100px;
+            color: white;
+            background-color: rgb(7, 7, 101);
+            border-radius: 10px;
+        }
+
+        /* section-2 */
+        .sec-2 {
+            height: 300px;
+            width: 100%;
+        }
+
+        .sec-2-pera-1 {
+            width: 100%;
+            font-size: 30px;
+            font-weight: bold;
+            color: rgb(3, 3, 73);
+            margin: 0 20px;
+        }
+
+        .sec-2-boxes {
+            height: 250px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .sec-2-box-pera {
+            height: 170px;
+            width: 150px;
+            box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        .sec-2-box-1 {
+            height: 80%;
+            width: 90%;
+            margin: auto;
+            padding: 5px 0;
+            text-align: center;
+        }
+
+        /* section-3 */
+
+        .sec-3 {
+            height: 270px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 0 10px;
+            gap: 10px;
+        }
+
+        .sec-3-child-1 {
+            height: 100%;
+            width: 50%;
+            background-image: url(https://img.freepik.com/premium-photo/fresh-raw-vegetables-white-background-wooden-top-view-free-space-your-text_187166-60828.jpg);
+            background-size: cover;
+        }
+
+        .sec-3-child-2 {
+            height: 100%;
+            width: 50%;
+            background-image: url(https://thumbs.dreamstime.com/b/bakery-bread-sweet-buns-white-background-space-your-text-90756827.jpg);
+            background-size: cover;
+        }
+
+        .sec-3-pera-1 {
+            height: 90%;
+            padding-top: 40px;
+            width: 60%;
+            margin-top: 10px;
+        }
+
+        .sec-3-pera-2 {
+            height: 90%;
+            width: 60%;
+            margin-top: 10px;
+            padding-top: 40px;
+        }
+
+        .sec-3-h2 {
+            font-size: 30px;
+            margin: 10px 0;
+        }
+
+        .sec-3-btn {
+            height: 40px;
+            margin: 10px 0;
+            width: 80px;
+            color: white;
+            background-color: rgb(2, 2, 20);
+            border-radius: 10px;
+        }
+
+        .sec-3-h2-pera-2 {
+            font-size: 30px;
+            margin: 10px 0;
+        }
+
+        .sec-3-btn-2 {
+            height: 40px;
+            margin: 10px 0;
+            width: 80px;
+            color: white;
+            background-color: rgb(2, 2, 20);
+            border-radius: 10px;
+        }
+
+        /* section-4 */
+
+        .sec-4 {
+            height: 600px;
+            width: 100%;
+            margin-top: 10px;
+            background-color: rgb(255, 255, 255);
+            padding-bottom: 50px;
+            border-bottom: 2px solid rgb(73, 71, 71);
+        }
+
+        .sec-4-main-box-1 {
+            margin-top: 30px;
+            height: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .sec-4-main-box-2 {
+            height: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+
+        }
+
+        .sec-4-boxes {
+            height: 99%;
+            width: 20%;
+            border: 1px solid black;
+            border-radius: 10px;
+            /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
+        }
+
+        .sec-4-boxes-main {
+            height: 99%;
+            width: 20%;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        .inner-sec-4-boxes {
+            height: 100px;
+            width: 100px;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-self: center;
+            margin-top: 10px;
+        }
+
+        .inner-sec-4-boxes-2 {
+            height: 100px;
+            width: 100px;
+            display: flex;
+            justify-self: center;
+            margin-top: 70px;
+        }
+
+        .inner-sec-4-boxes-3 {
+            height: 100px;
+            width: 100px;
+            display: flex;
+            justify-self: center;
+            margin-top: 50px;
+        }
+
+        .inner-sec-4-boxes-4 {
+            height: 100px;
+            width: 100px;
+            display: flex;
+            justify-self: center;
+            margin-top: 20px;
+        }
+
+        .inner-sec-4-boxes-5 {
+            height: 100px;
+            width: 100px;
+            display: flex;
+            justify-self: center;
+            margin-top: 50px;
+        }
+
+        .inner-sec-4-boxes-6 {
+            height: 100px;
+            width: 100px;
+            display: flex;
+            justify-self: center;
+            margin-top: 50px;
+        }
+
+        /* .inner-sec-4-boxes-7{
+            height: 100px;
+            width: 100px;
+            display: flex;
+            justify-self:2 center;
+        } */
+        .inner-sec-4-boxes-7 {
+            height: 100px;
+            width: 100px;
+            display: flex;
+            justify-self: center;
+            margin-top: 20px;
+        }
+
+        .inner-sec-4-boxes-8 {
+            height: 100px;
+            width: 100px;
+            display: flex;
+            justify-self: center;
+            margin-top: 50px;
+        }
+
+        .inner-sec-4-boxes-9 {
+            height: 100px;
+            width: 100px;
+            display: flex;
+            justify-self: center;
+            margin-top: 80px;
+        }
+
+        .inner-sec-4-boxes-10 {
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            display: flex;
+            justify-self: center;
+            margin-top: 50px;
+        }
+
+        .sec-4-btn {
+            padding: 5px 15px;
+            margin-left: 65px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .sec-4-sale {
+            color: white;
+            width: 40px;
+            font-size: 20px;
+            background-color: red;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        .sec-4-disc {
+            margin: 5px;
+            color: white;
+            font-size: 20px;
+            width: 40px;
+            border-radius: 5px;
+            background-color: rgb(17, 0, 255);
+        }
+
+        .box-3-sec-4-pera {
+            height: auto;
+            width: 90%;
+            text-align: center;
+            background-color: red;
+            color: white;
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+
+        /* footer */
+        footer {
+            height: 500px;
+            width: 100%;
+        }
+
+        .footer-inner-1 {
+            height: 250px;
+            width: 100%;
+            display: flex;
+            gap: 15px;
+            background-color: white;
+        }
+
+        .ftr-inr-1 {
+            height: 90%;
+            width: 25%;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+            border-radius: 10px;
+            margin: 5px;
+            padding: 10px;
+
+        }
+
+        .ftr-inr-pera-1 {
+            font-size: 20px;
+            padding-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .ftr-inr-pera-2 {
+            color: rgb(165, 132, 132);
+        }
+
+
+        .ftr-inr-2 {
+            height: 250px;
+            width: 100%;
+            display: flex;
+            gap: 15px;
+            background-color: white;
+        }
+
+        .ftr-inr-box {
+            height: 250px;
+            width: 18.5%;
+            padding: 5px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .ftr-inr-text {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .ftr-inr-text-inr {
+            padding-top: 10px;
+        }
+
+        .icon {
+            height: 60px;
+            width: 60px;
+        }
+
+        .last {
+            border-top: 2px solid rgb(58, 58, 58);
+            border-bottom: 2px solid rgb(58, 58, 58);
+            height: 100px;
+            width: 100%;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .amezon-pay {
+            width: 90px;
+            height: 80px;
+        }
+
+        .patment-mtd {
+            display: flex;
+            align-items: center;
+
+        }
+
+        .text {
+            display: flex;
+            align-items: center;
+        }
+
+        .app-store-img {
+            height: 70px;
+            width: 100px;
+        }
+        .google-store-img{
+            height: 50px;
+            width: 110px;
+        }
+        .last-card{
+            height: 100px;
+            width: 100%;
+            background-color: white;
+            padding-top: 20px;
+        }
+        .a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-1">
+            <p class="header-pera-1">Super value deals-save more with coupons</p>
+            <select name="" id="">
+                <option value="">english</option>
+                <option value="">hindi</option>
+                <option value="">gujrati</option>
+            </select>
+        </div>
+        <div class="header-2">
+            <p class="logo"><i class="fa-duotone fa-solid fa-cart-shopping"></i>FreshCart</p>
+            <div class="input-loca-both">
+                <input class="search-header" type="search" placeholder="Search for Products">
+                <input class="header-loca" type="location" placeholder="location">
+            </div>
+            <div class="icon-header">
+                <p class="icon-header-1"><i class="fa-solid fa-heart" style="color: #562ad8;"></i></p>
+                <p class="icon-header-2"><i class="fa-regular fa-user" style="color: #141414;"></i></p>
+                <p class="icon-header-3"><i class="fa-regular fa-bag-shopping"></i></p>
+            </div>
+        </div>
+        <div class="header-3-mipl-dropdown">
+            <button class="header-3-btn">All Departments</button>
+            <select>
+                <option value="">Home</option>
+            </select>
+            <select>
+                <option value="">Shop</option>
+            </select>
+            <select>
+                <option value="">Stories</option>
+            </select>
+            <select>
+                <option value="">Mega menu</option>
+            </select>
+            <select id="pages-dropdown">
+                <option value="">pages</option>
+                <option value="">Blog</option>
+                <option value="">Blog single</option>
+                <option value="">Blog category</option>
+                <option value="">Blog us</option>
+                <option value="">Blog error</option>
+                <option value="">contect</option>
+            </select>
+            <select>
+                <option value="">Account</option>
+            </select>
+            <p> Dashboard</p>
+            <p>Docs</p>
+        </div>
+    </header>
+
+    <!-- section-1 -->
+
+    <section class="sec-1">
+        <div class="sec-1-child-1-pera">
+            <p class="sec-1-child-pera-2">
+                Free shipping-order over $100
+            </p>
+            <h1 class="sec-1-child-h1">
+                Free shipping-order on $100
+            </h1>
+            <p class="sec-1-child-pera-3">
+                free shipping to first-time customers only, after promotions
+                and discounts are applied.
+            </p>
+            <button class="sec-1-child-btn">show now</button>
+        </div>
+    </section>
+
+    <!-- section-2 -->
+
+    <section class="sec-2">
+        <p class="sec-2-pera-1">
+            features categories
+        </p>
+        <div class="sec-2-boxes">
+            <div class="sec-2-box-pera">
+                <p class="sec-2-box-1">
+                    <img src="https://wellify.in/cdn/shop/files/Care-Package-Top-Tiles-05.jpg?v=1688983895"
+                        height="100%" width="100%">
+                    baby care
+                </p>
+            </div>
+            <div class="sec-2-box-pera">
+                <p class="sec-2-box-1">
+                    <img src="https://www.keeptruckeegreen.org/wp-content/uploads/2020/09/5-3.png" height="100%"
+                        width="100%">
+                    meat & fish
+                </p>
+            </div>
+            <div class="sec-2-box-pera">
+                <p class="sec-2-box-1">
+                    <img src="https://woosh.in/wp-content/uploads/2022/06/Woosh-DETERGENT-Powder-4kg-With-Paraat-No.2.jpg"
+                        height="100%" width="100%">
+                    cleaning powder
+                </p>
+            </div>
+            <div class="sec-2-box-pera">
+                <p class="sec-2-box-1">
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2024/6/424959721/KR/AV/TK/138849338/pet-care-product-manufacturer-shampoo-powder-soap-paste-wipes-syrup.png"
+                        height="100%" width="100%">
+                    pet care
+                </p>
+            </div>
+            <div class="sec-2-box-pera">
+                <p class="sec-2-box-1">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-gWlyi8OR4TGYVO3YKFa4lCw3T3SHUQdeR5w_rWQ9Ld0SNlQVI65n42JduEcT2u5unOw&usqp=CAU"
+                        height="100%" width="100%">
+                    fruit & vegetables
+                </p>
+            </div>
+            <div class="sec-2-box-pera">
+                <p class="sec-2-box-1">
+                    <img src="https://5.imimg.com/data5/EL/MU/VJ/SELLER-1933312/s-b-fruits-and-vegetables-packaging-500x500.png"
+                        height="100%" width="100%">
+                    fruits & vegetables
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- section-3 -->
+
+    <section class="sec-3">
+        <div class="sec-3-child-1">
+            <div class="sec-3-pera-1">
+                <h2 class="sec-3-h2">fruits & vegetables</h2>
+                <p class="sec-3-pera-1-child">get upto 30% off</p>
+                <button class="sec-3-btn">shop now</button>
+            </div>
+        </div>
+        <div class="sec-3-child-2">
+            <div class="sec-3-pera-2">
+                <h2 class="sec-3-h2-pera-2">freshly backed buns</h2>
+                <p class="sec-3-pera-2-child">get upto 25% off</p>
+                <button class="sec-3-btn-2">shop now</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- section-4 -->
+
+    <section class="sec-4">
+        <div class="sec-4-main-box-1">
+            <div class="box1 sec-4-boxes">
+                <p class="sec-4-sale"> sale </p>
+                <p class="sec-4-disc"> 10% </p>
+                <div class="inner-box-1 inner-sec-4-boxes">
+                    <p class="img-1-sec-4">
+                        <img src="https://tiimg.tistatic.com/fp/1/007/797/tasty-spicy-delicious-balaji-wafers-aloo-sav-namkeen-packaging-size-400-gram-557.jpg"
+                            height="100%" width="100%">
+                    </p>
+                </div>
+                <div class="sec-4-info-1">
+                    <p>Balaji Sev</p>
+                    <p class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    <p>4.2(4)</p>
+                    </p>
+                    <p>$21.5 <s>$24</s><button class="sec-4-btn">+add</button></p>
+                </div>
+            </div>
+            <div class="box2 sec-4-boxes">
+                <div class="inner-box-2 inner-sec-4-boxes-2">
+                    <p class="img-2-sec-4">
+                        <img src="https://eu.dookan.com/cdn/shop/products/19MQgv8S9FSpPk9TDJgob2W-JZIJxL7Nu_6e2a1ba2-9d9e-4104-9549-a41373824ec3.png?v=1646642771"
+                            height="100%" width="100%">
+                    </p>
+                </div>
+                <p>maneco</p>
+                <p class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                <p>4.2(4)</p>
+                </p>
+                <p>$21.5 <s>$24</s><button class="sec-4-btn">+add</button></p>
+            </div>
+            <div class="box3 sec-4-boxes">
+                <p class="box-3-sec-4-pera">Buy One Get $4.00 Off</p>
+                <div class="inner-box-3 inner-sec-4-boxes-3">
+                    <p class="img-3-sec-4">
+                        <img src="https://www.bbassets.com/media/uploads/p/xl/40019376_19-cadbury-5-star-chocolate-home-pack.jpg"
+                            height="100%" width="100%">
+                    </p>
+
+                </div>
+                <p>5star</p>
+                <p class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                <p>4.2(4)</p>
+                </p>
+                <p>$21.5 <s>$24</s><button class="sec-4-btn">+add</button></p>
+            </div>
+            <div class="box4 sec-4-boxes">
+                <p class="sec-4-sale"> sale </p>
+                <p class="sec-4-disc"> 10% </p>
+                <div class="inner-box-4 inner-sec-4-boxes-4">
+                    <p class="img-4-sec-4"><img
+                            src="https://instamart-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/NI_CATALOG/IMAGES/CIW/2024/7/29/8486e6d1-dc9a-417f-8594-22467da98193_chipsnachosandpopcorn_7CCPCUGWIH_MN.png"
+                            height="100%" width="100%"></p>
+
+                </div>
+                <p>crunchem</p>
+                <p class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                <p>4.2(4)</p>
+                </p>
+                <p>$21.5 <s>$24</s><button class="sec-4-btn">+add</button></p>
+            </div>
+            <div class="box5 sec-4-boxes">
+                <p class="sec-4-disc"> 10% </p>
+                <div class="inner-box-5 inner-sec-4-boxes-5">
+                    <p class="img-5-sec-4"><img
+                            src="https://www.bbassets.com/media/uploads/p/xl/40019376_19-cadbury-5-star-chocolate-home-pack.jpg"
+                            height="100%" width="100%"></p>
+
+                </div>
+                <p>5star</p>
+                <p class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                <p>4.2(4)</p>
+                </p>
+                <p>$21.5 <s>$24</s><button class="sec-4-btn">+add</button></p>
+            </div>
+        </div>
+
+        <div class="sec-4-main-box-2">
+            <div class="box6 sec-4-boxes-main">
+                <p class="box-3-sec-4-pera">Buy One Get $4.00 Off</p>
+                <div class="inner-box-1 inner-sec-4-boxes-6">
+                    <p class="img-6-sec-4"><img
+                            src="https://www.gopalnamkeen.com/storage/product/front_images/1736316278.jpg" height="100%"
+                            width="100%"></p>
+
+                </div>
+                <p>kalake</p>
+                <p class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                <p>4.2(4)</p>
+                </p>
+                <p>$21.5 <s>$24</s><button class="sec-4-btn">+add</button></p>
+            </div>
+            <div class="box7 sec-4-boxes-main">
+                <p class="sec-4-sale"> sale </p>
+                <p class="sec-4-disc"> 10% </p>
+                <div class="inner-box-1 inner-sec-4-boxes-7">
+
+                    <p class="img-7-sec-4"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8L9Q6-IHnygOBt5C1W7pPSYyBpsfeGHRWow&s"
+                            height="100%" width="100%"></p>
+
+
+                </div>
+                <p>mix tikha</p>
+                <p class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                <p>4.2(4)</p>
+                </p>
+                <p>$21.5 <s>$24</s><button class="sec-4-btn">+add</button></p>
+            </div>
+            <div class="box8 sec-4-boxes-main">
+                <p class="sec-4-disc"> 10% </p>
+                <div class="inner-box-1 inner-sec-4-boxes-8">
+                    <p class="img-8-sec-4"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcRvp_PZaLgOMDgq4JVyVWg7CGuRO8fFbIew&s"
+                            height="100%" width="100%"></p>
+
+                </div>
+                <p>crunchem</p>
+                <p class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                <p>4.2(4)</p>
+                </p>
+                <p>$21.5 <s>$24</s><button class="sec-4-btn">+add</button></p>
+            </div>
+            <div class="box9 sec-4-boxes-main">
+                <div class="inner-box-1 inner-sec-4-boxes-9">
+                    <p class="img-9-sec-4"><img src="https://www.prinitifoods.com/new-images/gathiya.png" height="100%"
+                            width="100%"></p>
+
+                </div>
+                <p>gathiya</p>
+                <p class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                <p>4.2(4)</p>
+                </p>
+                <p>$21.5 <s>$24</s><button class="sec-4-btn">+add</button></p>
+            </div>
+            <div class="box10 sec-4-boxes-main">
+                <p class="sec-4-disc"> 10% </p>
+                <div class="inner-box-1 inner-sec-4-boxes-10">
+                    <p class="img-10-sec-4"><img
+                            src="https://www.bbassets.com/media/uploads/p/xl/40019376_19-cadbury-5-star-chocolate-home-pack.jpg"
+                            height="100%" width="100%"></p>
+
+                </div>
+                <p>5star</p>
+                <p class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                <p>4.2(4)</p>
+                </p>
+                <p>$21.5 <s>$24</s><button class="sec-4-btn">+add</button></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-inner-1">
+            <div class="ftr-inr-1">
+                <p class="ftr-inr-pera-1">
+                <div class="icon">
+                    <img src="https://media.istockphoto.com/id/1031786258/vector/watch.jpg?s=612x612&w=0&k=20&c=U_7Euy34YQwrg2zgJw_VutYLUjDHYyKUr483e-w29RE="
+                        alt="" height="100%" width="100%">
+                </div>
+                10 minutes grocery now
+                </p>
+                <p class="ftr-inr-pera-2">
+                    get your order delovered to your doorstep at the earliest from freshcart
+                    pickup.
+                </p>
+            </div>
+            <div class="ftr-inr-1">
+                <p class="ftr-inr-pera-1">
+                <div class="icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/241/241509.png" height="100%" width="100%">
+                </div>
+                best price and offers
+                </p>
+                <p class="ftr-inr-pera-2">
+                    aper prices than your local supermarket, great cashback offer to top it off.
+                    get best pricess.
+                </p>
+            </div>
+            <div class="ftr-inr-1">
+                <div class="icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/679/679720.png" height="100%" width="100%">
+                </div>
+                <p class="ftr-inr-pera-1">
+                    wide assortment
+                </p>
+                <p class="ftr-inr-pera-2">
+                    choose from 5000+ products across food, personal care, househod,
+                    bakery, veg & non-veg etc.
+                </p>
+            </div>
+            <div class="ftr-inr-1">
+                <div class="icon">
+                    <img src="https://cdn-icons-png.freepik.com/512/9923/9923675.png" height="100%" width="100%">
+                </div>
+                <p class="ftr-inr-pera-1">
+                    easy returns
+                </p>
+                <p class="ftr-inr-pera-2">
+                    not saticfied within a products ? . personal care, househod,
+                    bakery, veg & non-veg etc.
+                </p>
+            </div>
+        </div>
+        <div class="ftr-inr-2">
+            <div class="ftr-inr-box">
+                <p class="ftr-inr-text">categories</p>
+                <p class="ftr-inr-text-inr">
+                <p>vegetables & fruits</p>
+                <p>vegetables & fruits</p>
+                <p>bakery & biscuits</p>
+                <p>atta, rice & dal</p>
+                <p>sauces & spreads & gourment</p>
+                <p>baby care</p>
+                <p>cleaning essentials</p>
+                <p>porsonal care</p>
+                </p>
+            </div>
+            <div class="ftr-inr-box">
+                <p class="ftr-inr-text-inr">
+                <p>dairy, bread & eggs</p>
+                <p>cold drinks & juices</p>
+                <p>masala,oil & more</p>
+                <p>chicken, meat & fish</p>
+                <p>paan corner</p>
+                <p>pharma & wellness</p>
+                <p>home & office</p>
+                <p>pet Care</p>
+                </p>
+            </div>
+            <div class="ftr-inr-box">
+                <p class="ftr-inr-text">get to know us</p>
+                <p>company</p>
+                <p>about</p>
+                <p>blog</p>
+                <p>help center</p>
+                <p>our value</p>
+            </div>
+            <div class="ftr-inr-box">
+                <p class="ftr-inr-text">for consumers</p>
+                <p>payments</p>
+                <p>shipping</p>
+                <p>products returns</p>
+                <p>FAQ</p>
+                <p>shop chekout</p>
+            </div>
+            <div class="ftr-inr-box">
+                <p class="ftr-inr-text">become a shopper</p>
+                <p>shopper opportunities</p>
+                <p>become a shopper</p>
+                <p>earnings</p>
+                <p>ideas & guides</p>
+                <p>new retailers</p>
+            </div>
+            <div class="ftr-inr-box">
+                <p class="ftr-inr-text">freshcart programers</p>
+                <p>gift cards</p>
+                <p>proos & coupons</p>
+                <p>freshcart ads</p>
+                <p>careers</p>
+            </div>
+        </div>
+        <!-- ========= -->
+        <div class="last">
+            <div class="patment-mtd">
+                <h3>patment pertners</h3>
+                <p class="amezon-pay"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9KjWBvpsVGKHD0eGvfrI6pfsay3y-VyyxEA&s"
+                        height="100%" width="100%"></p>
+                <p class="amezon-pay"><img
+                        src="https://toppng.com/uploads/preview/google-pay-gpay-logo-11530962961mwws81tde9.png"
+                        height="100%" width="100%"></p>
+                <p class="amezon-pay"><img
+                        src="https://www.citypng.com/public/uploads/preview/hd-paytm-logo-transparent-background-701751694706616oo59sshkej.png"
+                        height="100%" width="100%"></p>
+                
+            </div>
+            <div class="text">
+                    <p>get deliveries with freshcart</p>
+                    <p class="app-store-img"><img
+                            src="https://cdn.pixabay.com/photo/2021/09/22/16/07/app-store-6647240_1280.png"
+                            height="100%" width="100%"></p>
+                    <p class="google-store-img"><img
+                            src="https://img.favpng.com/0/10/20/google-play-android-app-store-png-favpng-jCmdkQnfYRzbA4R4ncuFytemJ.jpg"
+                            height="100%" width="100%"></p>
+                </div>
+        </div>
+        <div class="last-card">
+            <p>@ 2022 - 2025 freshcart e-commerce html template. all rights reserved.
+                powered by <a class="a" href="#">codescandy</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
