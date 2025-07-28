@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COFFEE-SHOP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-transform: capitalize;
+        }
+
+        nav {
+            padding: 0 10px;
+            height: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(255, 234, 216);
+        }
+
+        .logo {
+            margin-top: 1px;
+            height: 98px;
+            width: 125px;
+        }
+
+        ul {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            padding-right: 20px;
+        }
+
+        ul>li {
+            list-style: none;
+        }
+
+        li>a {
+            text-decoration: none;
+            color: rgb(123, 0, 0);
+            transition-duration: 0.6s;
+        }
+
+        .search-icn {
+            height: 35px;
+            width: 35px;
+        }
+
+        .nav-menu-icon {
+            display: none;
+        }
+
+        .menu:hover {
+            border-bottom: 2px solid brown;
+        }
+
+        @media (max-width:743px) {
+            ul {
+                display: none;
+            }
+
+            .nav-menu-icon {
+                display: block;
+                float: right;
+                margin-top: 30px;
+                font-size: 30px;
+            }
+        }
+
+        /* section-1 */
+
+        .sec-1 {
+            width: 100%;
+            padding: 0 10px;
+            display: flex;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        .sec-1-img {
+            border-radius: 10px;
+            border: 2px solid salmon;
+        }
+
+        @media (max-width:567px) and (min-width:440px) {
+            .sec-1-img {
+                height: 40vh;
+            }
+        }
+
+        @media (max-width:440px) {
+            .sec-1-img {
+                height: 40vh;
+            }
+        }
+
+        /* section-2 */
+
+        .sec-2 {
+            width: 100%;
+            padding: 0 10px;
+            margin-top: 10px;
+        }
+
+        .sec-2-inr-1 {
+            width: 100%;
+            text-align: center;
+            padding-top: 30px;
+
+        }
+
+        .sec-2-inr-2 {
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .h1 {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .pera-sec-2 {
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(195, 100, 90);
+        }
+
+        .sec-2-inr-2-boxes {
+            border-radius: 10px;
+        }
+
+        .sec-2-inr-2-img {
+            border-radius: 10px;
+        }
+         @media (max-width:500px){
+           .sec-2-inr-2{
+                grid-template-columns: auto auto;
+            }
+            .box-1st{
+                width: 45vw;
+            }
+            .box-2nd{
+                width: 45vw;
+            }
+            .box-3rd{
+                margin-left: 25vw;
+            }
+        } 
+        /* section-3 */
+
+        .sec-3 {
+            width: 100%;
+            margin-top: 10px;
+            padding: 0 10px;
+        }
+
+        .sec-3-inr-1 {
+            height: 100px;
+            width: 100%;
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        .sec-3-inr-2 {
+            display: flex;
+            overflow: scroll;
+            height: 230px;
+            margin-top: 10px;
+            gap: 20px;
+        }
+
+        .sec-3-inr-2-boxes {
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+            border-radius: 10px;
+            text-align: center;
+            margin: 0 5px;
+        }
+
+        .sec-3-peras {
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        .sec-3-imgs {
+            height: 150px;
+            width: 170px;
+            border-radius: 10px;
+        }
+
+        .sec-buy-btn {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 5px;
+            margin-top: 10px;
+        }
+
+        .sec-buy-btn>p {
+            border-radius: 10px;
+            padding: 3px 15px;
+            color: white;
+            background-color: rgb(128, 13, 0);
+        }
+
+        .sec-buy-btn>button {
+            background-color: rgb(128, 13, 0);
+            color: white;
+            padding: 3px 5px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .over-img {
+            padding: 0 20px;
+        }
+
+        .img-inr {
+            padding: 0 15px;
+        }
+
+        /* section-4 */
+        .sec-4-inr-2 {
+            width: 100%;
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+        }
+
+        .sec-4-boxes {
+            margin: 0 10px;
+            border-radius: 10px;
+            padding: 0 10px;
+            border: 2px solid red;
+            background-color: rgb(233, 149, 139);
+
+        }
+
+        .sec-4-boxes>p {
+            padding-top: 10px;
+            color: rgb(0, 0, 0);
+            line-height: 25px;
+            font-weight: bold;
+        }
+
+        .sec-4-img {
+            height: 200px;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .sec-4-img-inr {
+            border-radius: 10px;
+        }
+
+        .latest {
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+        @media (max-width:845px) {
+           .sec-4-img{
+                height: 20vh;
+            }
+        }
+        @media (max-width:500px) {
+            .sec-4-inr-2{
+                grid-template-columns: auto;
+            }
+            .sec-4-img{
+                height: 30vh;
+            }
+        }
+        /* footer */
+        .footer {
+            padding: 0 10px;
+            border: 2px solid black;
+            margin-top: 50px;
+            color: white;
+            background-color: black;
+        }
+
+        .last-grid {
+            height: 400px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+        }
+
+        .foot-box {
+            height: 100%;
+            text-align: center;
+            line-height: 35px;
+        }
+
+        .line {
+            margin: 10px 0;
+            width: 100%;
+            border: 2px solid rgb(255, 255, 255);
+        }
+
+        .one {
+            font-size: 30px;
+            padding-bottom: 10px;
+        }
+        .last-a{
+            text-decoration: none;
+            color: wheat;
+        }
+        @media (max-width:500px){
+            .last-grid{
+                text-align: center;
+            }
+            .one{
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <p class="logo"><img src="./../../../../Pictures/img/coffee-2.avif" alt="" height="100%" width="100%"></p>
+            <ul>
+                <li class="menu"><a href="">Home</a></li>
+                <li class="menu"><a href="">Menu</a></li>
+                <li class="menu"><a href="">Blog</a></li>
+                <li class="menu"><a href="">Media</a></li>
+                <li class="menu"><a href="">Contect</a></li>
+                <li><a href="">
+                        <img class="search-icn"
+                            src="https://icons.veryicon.com/png/o/miscellaneous/social-applet-1/search-369.png" alt=""
+                            height="100%" width="100%"></a>
+                </li>
+            </ul>
+            <i class="fa-solid fa-bars nav-menu-icon"></i>
+        </nav>
+    </header>
+
+    <!-- section-1 -->
+
+    <section class="sec-1">
+        <img class="sec-1-img" src="./../../../../Documents/cofee-3.jpg" height="100%" width="100%">
+    </section>
+
+    <!-- section-2 -->
+
+    <section class="sec-2">
+        <div class="sec-2-inr-1 latest">
+            <p class="h1">TOP CATEGORIES</p>
+            <p class="pera-sec-2">Explore The Recent more Bought Drinks This week</p>
+        </div>
+        <div class="sec-2-inr-2">
+            <div class="sec-2-inr-2-boxes">
+                <img class="sec-2-inr-2-img box-1st"
+                    src="https://hoxtoncoffee.com/cdn/shop/articles/latte-art-on-mocha_1200x1200.jpg?v=1660069726"
+                    alt="" height="100%" width="100%">
+            </div>
+            <div class="sec-2-inr-2-boxes">
+                <img class="sec-2-inr-2-img box-2nd"
+                    src="https://5.imimg.com/data5/KP/OL/GLADMIN-10207619/american-black-coffee.png" alt=""
+                    height="100%" width="100%">
+            </div>
+            <div class="sec-2-inr-2-boxes">
+                <img class="sec-2-inr-2-img box-3rd"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE55ZIrMBNiVuDG386CsA3QPIZUDKYD63b3Q&s"
+                    alt="" height="100%" width="100%">
+            </div>
+        </div>
+    </section>
+
+    <!-- section-3 -->
+    <section class="sec-3">
+        <div class="sec-3-inr-1 latest">
+            <p class="h1">TOP MILK SHAKES</p>
+            <p class="pera-sec-2">Explore The Recent more Bought Shakes This week</p>
+        </div>
+        <div class="sec-3-inr-2">
+            <div class="sec-3-inr-2-boxes"><img class="sec-3-imgs"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRZQ31GSZgOjgYEIs8rWMRKxl-YLCttX8_K5MvTk4SMbF36v2sv_B01q3kQdyw6ijHARU&usqp=CAU"
+                    alt="" height="100%" width="100%">
+                <p class="sec-3-peras">Mocha Shake</p>
+                <div class="sec-buy-btn">
+                    <p>$20.00</p>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+            <div class="sec-3-inr-2-boxes"> <img class="sec-3-imgs"
+                    src="https://png.pngtree.com/png-clipart/20240612/original/pngtree-a-glass-of-chocolate-flavored-milkshake-filled-with-whipped-cream-png-image_15311536.png"
+                    alt="" height="100%" width="100%">
+                <p class="sec-3-peras">lavender Shake</p>
+                <div class="sec-buy-btn">
+                    <p>$22.00</p>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+            <div class="sec-3-inr-2-boxes"><img class="sec-3-imgs"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqKi73J8uq1ams4f3WtA8Q_UGanFCczXJQX1SbFCwmCj1dAO-OD7QZGM29a9_N9DhY2m4&usqp=CAU"
+                    alt="" height="100%" width="100%">
+                <p class="sec-3-peras">Shake</p>
+                <div class="sec-buy-btn">
+                    <p>$28.00</p>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+            <div class="sec-3-inr-2-boxes"> <img class="sec-3-imgs"
+                    src="https://png.pngtree.com/png-vector/20250209/ourmid/pngtree-tall-glass-of-creamy-chocolate-milkshake-with-a-smooth-swirl-on-png-image_15426319.png"
+                    alt="" height="100%" width="100%">
+                <p class="sec-3-peras">Shake</p>
+                <div class="sec-buy-btn">
+                    <p>$45.00</p>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+            <div class="sec-3-inr-2-boxes"><img class="sec-3-imgs img-inr"
+                    src="https://www.pikpng.com/pngl/m/208-2084856_shake-png-thick-shakes-images-hd-clipart.png" alt=""
+                    height="100%" width="100%">
+                <p class="sec-3-peras">Shake</p>
+                <div class="sec-buy-btn">
+                    <p>$32.00</p>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+            <div class="sec-3-inr-2-boxes"> <img class="sec-3-imgs"
+                    src="https://img.freepik.com/free-psd/delicious-chocolate-sundae-isolated-transparent-background_191095-9321.jpg?semt=ais_items_boosted&w=740"
+                    alt="" height="100%" width="100%">
+                <p class="sec-3-peras">Shake</p>
+                <div class="sec-buy-btn">
+                    <p>$21.00</p>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+            <div class="sec-3-inr-2-boxes"><img class="sec-3-imgs over-img"
+                    src="https://thumbs.dreamstime.com/b/white-background-chocolate-milkshake-smoothie-white-background-chocolate-milkshake-smoothie-png-format-383444552.jpg"
+                    alt="" height="100%" width="100%">
+                <p class="sec-3-peras"> Shake</p>
+                <div class="sec-buy-btn">
+                    <p>$42.00</p>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec-4">
+        <div class="sec-3-inr-1 latest">
+            <p class="h1">LATEST BLOGS</p>
+            <p class="pera-sec-2">Explore The Recent most Bought Shakes This week</p>
+        </div>
+        <div class="sec-4-inr-2">
+            <div class="sec-4-boxes">
+                <div class="sec-4-img">
+                    <img class="sec-4-img-inr"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo2sTf-RnK38gO5XhWVLX3lGQz6LHk0eolpw&s"
+                        alt="" height="100%" width="100%">
+                </div>
+                <p>someone with a deep appreciation and understanding of coffee, encompassing its origins, brewing
+                    methods, and flavor profiles. They are passionate about exploring the nuances of different beans,
+                    roasts, and preparation techniques, often developing a refined palate for distinguishing subtle
+                    differences in taste and aroma. </p>
+            </div>
+            <div class="sec-4-boxes">
+                <div class="sec-4-img">
+                    <img class="sec-4-img-inr"
+                        src="https://img.freepik.com/free-photo/medium-shot-man-drinking-coffee_23-2149155209.jpg"
+                        alt="" height="100%" width="100%">
+                </div>
+                <p>someone with a deep appreciation and understanding of coffee, encompassing its origins, brewing
+                    methods, and flavor profiles. They are passionate about exploring the nuances of different beans,
+                    roasts, and preparation techniques, often developing a refined palate for distinguishing subtle
+                    differences in taste and aroma. </p>
+            </div>
+            <div class="sec-4-boxes">
+                <div class="sec-4-img">
+                    <img class="sec-4-img-inr"
+                        src="https://www.mdanderson.org/images/publications/cancerwise/C/CW_CoffeeShop_WEB.jpg" alt=""
+                        height="100%" width="100%">
+                </div>
+                <p>someone with a deep appreciation and understanding of coffee, encompassing its origins, brewing
+                    methods, and flavor profiles. They are passionate about exploring the nuances of different beans,
+                    roasts, and preparation techniques, often developing a refined palate for distinguishing subtle
+                    differences in taste and aroma. </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="line"></div>
+        <div class="last-grid">
+            <div class="foot-box">
+                <p class="one">Products</p>
+                <p><a href="" class="last-a">Shakes</a></p>
+                <p><a href="" class="last-a">Coffees</a></p>
+            </div>
+            <div class="foot-box">
+                <p class="one">Category</p>
+                <p><a href="" class="last-a">Menu</a></p>
+                <p><a href="" class="last-a">New In</a></p>
+            </div>
+            <div class="foot-box">
+                <p class="one">Company Info</p>
+                <p><a href="" class="last-a">About Us</a></p>
+                <p><a href="" class="last-a">Contect Us</a></p>
+                <p><a href="" class="last-a">Payment Method</a></p>
+                <p><a href="" class="last-a">Support</a></p>
+                <p><a href="" class="last-a">Products</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
